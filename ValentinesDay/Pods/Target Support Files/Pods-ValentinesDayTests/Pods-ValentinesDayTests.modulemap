@@ -1,0 +1,6 @@
+framework module Pods_ValentinesDayTests {
+  umbrella header "Pods-ValentinesDayTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

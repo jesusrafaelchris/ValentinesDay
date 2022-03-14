@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-ValentinesDay/Pods-ValentinesDay-artifacts.sh
+${PODS_ROOT}/MapboxAccounts/MapboxAccounts.xcframework
+${PODS_ROOT}/MapboxCommon/MapboxCommon.xcframework
+${PODS_ROOT}/MapboxNavigationNative/MapboxNavigationNative.xcframework

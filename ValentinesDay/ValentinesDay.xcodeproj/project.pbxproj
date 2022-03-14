@@ -1,0 +1,845 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49A4F502230391F15BB47A39 /* Pods_ValentinesDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF0D1D57AA6CA0C591ADB1D /* Pods_ValentinesDay.framework */; };
+		800F795225D00C8F002D9247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F795125D00C8F002D9247 /* AppDelegate.swift */; };
+		800F795425D00C8F002D9247 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F795325D00C8F002D9247 /* SceneDelegate.swift */; };
+		800F795625D00C90002D9247 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F795525D00C8F002D9247 /* ViewController.swift */; };
+		800F795925D00C90002D9247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800F795725D00C90002D9247 /* Main.storyboard */; };
+		800F795B25D00C90002D9247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 800F795A25D00C90002D9247 /* Assets.xcassets */; };
+		800F795E25D00C90002D9247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800F795C25D00C90002D9247 /* LaunchScreen.storyboard */; };
+		800F796925D00C91002D9247 /* ValentinesDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F796825D00C91002D9247 /* ValentinesDayTests.swift */; };
+		800F797425D00C91002D9247 /* ValentinesDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F797325D00C91002D9247 /* ValentinesDayUITests.swift */; };
+		800F79A025D01A4B002D9247 /* SwipeThroughPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F799F25D01A4B002D9247 /* SwipeThroughPage.swift */; };
+		800F79A525D01BC8002D9247 /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F79A425D01BC8002D9247 /* FirstPage.swift */; };
+		800F79AA25D01BD5002D9247 /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F79A925D01BD5002D9247 /* SecondPage.swift */; };
+		800F79AF25D01BE1002D9247 /* ThirdPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F79AE25D01BE1002D9247 /* ThirdPage.swift */; };
+		800F79B425D01BF9002D9247 /* FourthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F79B325D01BF9002D9247 /* FourthPage.swift */; };
+		800F79B925D01CB3002D9247 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F79B825D01CB3002D9247 /* HomePage.swift */; };
+		800F79C225D0416A002D9247 /* QrCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F79C125D0416A002D9247 /* QrCode.swift */; };
+		800F79CD25D050B0002D9247 /* Clues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F79CC25D050B0002D9247 /* Clues.swift */; };
+		800F79DC25D15541002D9247 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F79DB25D15541002D9247 /* MenuView.swift */; };
+		800F79E725D15E06002D9247 /* ClueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F79E625D15E06002D9247 /* ClueCell.swift */; };
+		805A191825D1C73800501A6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 805A191725D1C73800501A6C /* GoogleService-Info.plist */; };
+		805A1B4825D3005700501A6C /* Clue2.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 805A1B4725D3005700501A6C /* Clue2.geojson */; };
+		805A1B4D25D3005A00501A6C /* Clue3.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 805A1B4C25D3005A00501A6C /* Clue3.geojson */; };
+		805A1B5225D3005E00501A6C /* Clue4.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 805A1B5125D3005E00501A6C /* Clue4.geojson */; };
+		805A1B5725D3006100501A6C /* Clue5.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 805A1B5625D3006100501A6C /* Clue5.geojson */; };
+		805A1B5F25D3006500501A6C /* Clue6.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 805A1B5E25D3006500501A6C /* Clue6.geojson */; };
+		805A1B6425D3006900501A6C /* Clue7.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 805A1B6325D3006900501A6C /* Clue7.geojson */; };
+		805A1B6925D3006D00501A6C /* Clue8.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 805A1B6825D3006D00501A6C /* Clue8.geojson */; };
+		805A1B6E25D3007000501A6C /* Clue9.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 805A1B6D25D3007000501A6C /* Clue9.geojson */; };
+		805A1B7625D302FD00501A6C /* Clue1.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 805A1B7525D302FD00501A6C /* Clue1.geojson */; };
+		805A1B7F25D3172D00501A6C /* ClueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805A1B7E25D3172D00501A6C /* ClueView.swift */; };
+		80FC70EA25D53CD800635FB5 /* TreasurePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC70E925D53CD800635FB5 /* TreasurePage.swift */; };
+		816EBC7457D6AA1593634C97 /* Pods_ValentinesDay_ValentinesDayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD268B16157FFEA44A9E38CC /* Pods_ValentinesDay_ValentinesDayUITests.framework */; };
+		E8D2F65CBF89B99B25547319 /* Pods_ValentinesDayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD186D1572F02C99853DC187 /* Pods_ValentinesDayTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		800F796525D00C91002D9247 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 800F794625D00C8F002D9247 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 800F794D25D00C8F002D9247;
+			remoteInfo = ValentinesDay;
+		};
+		800F797025D00C91002D9247 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 800F794625D00C8F002D9247 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 800F794D25D00C8F002D9247;
+			remoteInfo = ValentinesDay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		312243B41E84465D1AE48E2B /* Pods-ValentinesDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValentinesDay.debug.xcconfig"; path = "Target Support Files/Pods-ValentinesDay/Pods-ValentinesDay.debug.xcconfig"; sourceTree = "<group>"; };
+		445C528D55A44616AD889B29 /* Pods-ValentinesDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValentinesDay.release.xcconfig"; path = "Target Support Files/Pods-ValentinesDay/Pods-ValentinesDay.release.xcconfig"; sourceTree = "<group>"; };
+		7F049C52C551610328E68362 /* Pods-ValentinesDay-ValentinesDayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValentinesDay-ValentinesDayUITests.debug.xcconfig"; path = "Target Support Files/Pods-ValentinesDay-ValentinesDayUITests/Pods-ValentinesDay-ValentinesDayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		800F794E25D00C8F002D9247 /* ValentinesDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValentinesDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		800F795125D00C8F002D9247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		800F795325D00C8F002D9247 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		800F795525D00C8F002D9247 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		800F795825D00C90002D9247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		800F795A25D00C90002D9247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		800F795D25D00C90002D9247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		800F795F25D00C90002D9247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		800F796425D00C91002D9247 /* ValentinesDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValentinesDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		800F796825D00C91002D9247 /* ValentinesDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValentinesDayTests.swift; sourceTree = "<group>"; };
+		800F796A25D00C91002D9247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		800F796F25D00C91002D9247 /* ValentinesDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValentinesDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		800F797325D00C91002D9247 /* ValentinesDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValentinesDayUITests.swift; sourceTree = "<group>"; };
+		800F797525D00C91002D9247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		800F799F25D01A4B002D9247 /* SwipeThroughPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeThroughPage.swift; sourceTree = "<group>"; };
+		800F79A425D01BC8002D9247 /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
+		800F79A925D01BD5002D9247 /* SecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPage.swift; sourceTree = "<group>"; };
+		800F79AE25D01BE1002D9247 /* ThirdPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPage.swift; sourceTree = "<group>"; };
+		800F79B325D01BF9002D9247 /* FourthPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthPage.swift; sourceTree = "<group>"; };
+		800F79B825D01CB3002D9247 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		800F79C125D0416A002D9247 /* QrCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCode.swift; sourceTree = "<group>"; };
+		800F79CC25D050B0002D9247 /* Clues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clues.swift; sourceTree = "<group>"; };
+		800F79DB25D15541002D9247 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		800F79E625D15E06002D9247 /* ClueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClueCell.swift; sourceTree = "<group>"; };
+		805A191725D1C73800501A6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		805A1B4725D3005700501A6C /* Clue2.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Clue2.geojson; sourceTree = SOURCE_ROOT; };
+		805A1B4C25D3005A00501A6C /* Clue3.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Clue3.geojson; sourceTree = SOURCE_ROOT; };
+		805A1B5125D3005E00501A6C /* Clue4.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Clue4.geojson; sourceTree = SOURCE_ROOT; };
+		805A1B5625D3006100501A6C /* Clue5.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Clue5.geojson; sourceTree = SOURCE_ROOT; };
+		805A1B5E25D3006500501A6C /* Clue6.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Clue6.geojson; sourceTree = SOURCE_ROOT; };
+		805A1B6325D3006900501A6C /* Clue7.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Clue7.geojson; sourceTree = SOURCE_ROOT; };
+		805A1B6825D3006D00501A6C /* Clue8.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Clue8.geojson; sourceTree = SOURCE_ROOT; };
+		805A1B6D25D3007000501A6C /* Clue9.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Clue9.geojson; sourceTree = SOURCE_ROOT; };
+		805A1B7525D302FD00501A6C /* Clue1.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Clue1.geojson; sourceTree = "<group>"; };
+		805A1B7E25D3172D00501A6C /* ClueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClueView.swift; sourceTree = "<group>"; };
+		80FC70E925D53CD800635FB5 /* TreasurePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasurePage.swift; sourceTree = "<group>"; };
+		BAA8EC49C7C5A12FF6EF3866 /* Pods-ValentinesDay-ValentinesDayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValentinesDay-ValentinesDayUITests.release.xcconfig"; path = "Target Support Files/Pods-ValentinesDay-ValentinesDayUITests/Pods-ValentinesDay-ValentinesDayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BAF0D1D57AA6CA0C591ADB1D /* Pods_ValentinesDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ValentinesDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD268B16157FFEA44A9E38CC /* Pods_ValentinesDay_ValentinesDayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ValentinesDay_ValentinesDayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD186D1572F02C99853DC187 /* Pods_ValentinesDayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ValentinesDayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5ADC7807794BCF9C941BDE /* Pods-ValentinesDayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValentinesDayTests.debug.xcconfig"; path = "Target Support Files/Pods-ValentinesDayTests/Pods-ValentinesDayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3319CD1A310D30A259F55D2 /* Pods-ValentinesDayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValentinesDayTests.release.xcconfig"; path = "Target Support Files/Pods-ValentinesDayTests/Pods-ValentinesDayTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		800F794B25D00C8F002D9247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A4F502230391F15BB47A39 /* Pods_ValentinesDay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800F796125D00C91002D9247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D2F65CBF89B99B25547319 /* Pods_ValentinesDayTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800F796C25D00C91002D9247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816EBC7457D6AA1593634C97 /* Pods_ValentinesDay_ValentinesDayUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2518C0D150484DD690B56CEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAF0D1D57AA6CA0C591ADB1D /* Pods_ValentinesDay.framework */,
+				CD268B16157FFEA44A9E38CC /* Pods_ValentinesDay_ValentinesDayUITests.framework */,
+				DD186D1572F02C99853DC187 /* Pods_ValentinesDayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D4288141E5368FC057F65E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				312243B41E84465D1AE48E2B /* Pods-ValentinesDay.debug.xcconfig */,
+				445C528D55A44616AD889B29 /* Pods-ValentinesDay.release.xcconfig */,
+				7F049C52C551610328E68362 /* Pods-ValentinesDay-ValentinesDayUITests.debug.xcconfig */,
+				BAA8EC49C7C5A12FF6EF3866 /* Pods-ValentinesDay-ValentinesDayUITests.release.xcconfig */,
+				ED5ADC7807794BCF9C941BDE /* Pods-ValentinesDayTests.debug.xcconfig */,
+				F3319CD1A310D30A259F55D2 /* Pods-ValentinesDayTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		800F794525D00C8F002D9247 = {
+			isa = PBXGroup;
+			children = (
+				800F795025D00C8F002D9247 /* ValentinesDay */,
+				800F796725D00C91002D9247 /* ValentinesDayTests */,
+				800F797225D00C91002D9247 /* ValentinesDayUITests */,
+				800F794F25D00C8F002D9247 /* Products */,
+				2D4288141E5368FC057F65E4 /* Pods */,
+				2518C0D150484DD690B56CEF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		800F794F25D00C8F002D9247 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				800F794E25D00C8F002D9247 /* ValentinesDay.app */,
+				800F796425D00C91002D9247 /* ValentinesDayTests.xctest */,
+				800F796F25D00C91002D9247 /* ValentinesDayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		800F795025D00C8F002D9247 /* ValentinesDay */ = {
+			isa = PBXGroup;
+			children = (
+				800F795125D00C8F002D9247 /* AppDelegate.swift */,
+				800F795325D00C8F002D9247 /* SceneDelegate.swift */,
+				800F79B825D01CB3002D9247 /* HomePage.swift */,
+				800F79DB25D15541002D9247 /* MenuView.swift */,
+				800F79E625D15E06002D9247 /* ClueCell.swift */,
+				805A1B7E25D3172D00501A6C /* ClueView.swift */,
+				80FC70E925D53CD800635FB5 /* TreasurePage.swift */,
+				800F799F25D01A4B002D9247 /* SwipeThroughPage.swift */,
+				800F79A425D01BC8002D9247 /* FirstPage.swift */,
+				800F79A925D01BD5002D9247 /* SecondPage.swift */,
+				800F79AE25D01BE1002D9247 /* ThirdPage.swift */,
+				800F79B325D01BF9002D9247 /* FourthPage.swift */,
+				800F79C125D0416A002D9247 /* QrCode.swift */,
+				800F79CC25D050B0002D9247 /* Clues.swift */,
+				800F795725D00C90002D9247 /* Main.storyboard */,
+				800F795A25D00C90002D9247 /* Assets.xcassets */,
+				800F795C25D00C90002D9247 /* LaunchScreen.storyboard */,
+				800F795F25D00C90002D9247 /* Info.plist */,
+				805A191725D1C73800501A6C /* GoogleService-Info.plist */,
+				800F795525D00C8F002D9247 /* ViewController.swift */,
+				805A1B7525D302FD00501A6C /* Clue1.geojson */,
+				805A1B4725D3005700501A6C /* Clue2.geojson */,
+				805A1B4C25D3005A00501A6C /* Clue3.geojson */,
+				805A1B5125D3005E00501A6C /* Clue4.geojson */,
+				805A1B5625D3006100501A6C /* Clue5.geojson */,
+				805A1B5E25D3006500501A6C /* Clue6.geojson */,
+				805A1B6325D3006900501A6C /* Clue7.geojson */,
+				805A1B6825D3006D00501A6C /* Clue8.geojson */,
+				805A1B6D25D3007000501A6C /* Clue9.geojson */,
+			);
+			path = ValentinesDay;
+			sourceTree = "<group>";
+		};
+		800F796725D00C91002D9247 /* ValentinesDayTests */ = {
+			isa = PBXGroup;
+			children = (
+				800F796825D00C91002D9247 /* ValentinesDayTests.swift */,
+				800F796A25D00C91002D9247 /* Info.plist */,
+			);
+			path = ValentinesDayTests;
+			sourceTree = "<group>";
+		};
+		800F797225D00C91002D9247 /* ValentinesDayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				800F797325D00C91002D9247 /* ValentinesDayUITests.swift */,
+				800F797525D00C91002D9247 /* Info.plist */,
+			);
+			path = ValentinesDayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		800F794D25D00C8F002D9247 /* ValentinesDay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800F797825D00C91002D9247 /* Build configuration list for PBXNativeTarget "ValentinesDay" */;
+			buildPhases = (
+				36D90480CF5D8A6531C27EAC /* [CP] Check Pods Manifest.lock */,
+				800F794A25D00C8F002D9247 /* Sources */,
+				800F794B25D00C8F002D9247 /* Frameworks */,
+				800F794C25D00C8F002D9247 /* Resources */,
+				5BE99DD7C9F4D302BA6FCCB4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ValentinesDay;
+			productName = ValentinesDay;
+			productReference = 800F794E25D00C8F002D9247 /* ValentinesDay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		800F796325D00C91002D9247 /* ValentinesDayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800F797B25D00C91002D9247 /* Build configuration list for PBXNativeTarget "ValentinesDayTests" */;
+			buildPhases = (
+				967D4E646CA7661BFFDE68DF /* [CP] Check Pods Manifest.lock */,
+				800F796025D00C91002D9247 /* Sources */,
+				800F796125D00C91002D9247 /* Frameworks */,
+				800F796225D00C91002D9247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				800F796625D00C91002D9247 /* PBXTargetDependency */,
+			);
+			name = ValentinesDayTests;
+			productName = ValentinesDayTests;
+			productReference = 800F796425D00C91002D9247 /* ValentinesDayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		800F796E25D00C91002D9247 /* ValentinesDayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800F797E25D00C91002D9247 /* Build configuration list for PBXNativeTarget "ValentinesDayUITests" */;
+			buildPhases = (
+				6F961C0FCAB23B1BDCAA9C37 /* [CP] Check Pods Manifest.lock */,
+				800F796B25D00C91002D9247 /* Sources */,
+				800F796C25D00C91002D9247 /* Frameworks */,
+				800F796D25D00C91002D9247 /* Resources */,
+				43F8DC30DCF84AA17AC698C8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				800F797125D00C91002D9247 /* PBXTargetDependency */,
+			);
+			name = ValentinesDayUITests;
+			productName = ValentinesDayUITests;
+			productReference = 800F796F25D00C91002D9247 /* ValentinesDayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		800F794625D00C8F002D9247 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					800F794D25D00C8F002D9247 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					800F796325D00C91002D9247 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 800F794D25D00C8F002D9247;
+					};
+					800F796E25D00C91002D9247 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 800F794D25D00C8F002D9247;
+					};
+				};
+			};
+			buildConfigurationList = 800F794925D00C8F002D9247 /* Build configuration list for PBXProject "ValentinesDay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 800F794525D00C8F002D9247;
+			productRefGroup = 800F794F25D00C8F002D9247 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				800F794D25D00C8F002D9247 /* ValentinesDay */,
+				800F796325D00C91002D9247 /* ValentinesDayTests */,
+				800F796E25D00C91002D9247 /* ValentinesDayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		800F794C25D00C8F002D9247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805A1B6425D3006900501A6C /* Clue7.geojson in Resources */,
+				800F795E25D00C90002D9247 /* LaunchScreen.storyboard in Resources */,
+				805A1B4825D3005700501A6C /* Clue2.geojson in Resources */,
+				805A191825D1C73800501A6C /* GoogleService-Info.plist in Resources */,
+				805A1B7625D302FD00501A6C /* Clue1.geojson in Resources */,
+				800F795B25D00C90002D9247 /* Assets.xcassets in Resources */,
+				805A1B6E25D3007000501A6C /* Clue9.geojson in Resources */,
+				805A1B4D25D3005A00501A6C /* Clue3.geojson in Resources */,
+				805A1B5225D3005E00501A6C /* Clue4.geojson in Resources */,
+				800F795925D00C90002D9247 /* Main.storyboard in Resources */,
+				805A1B6925D3006D00501A6C /* Clue8.geojson in Resources */,
+				805A1B5725D3006100501A6C /* Clue5.geojson in Resources */,
+				805A1B5F25D3006500501A6C /* Clue6.geojson in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800F796225D00C91002D9247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800F796D25D00C91002D9247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36D90480CF5D8A6531C27EAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ValentinesDay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43F8DC30DCF84AA17AC698C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ValentinesDay-ValentinesDayUITests/Pods-ValentinesDay-ValentinesDayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ValentinesDay-ValentinesDayUITests/Pods-ValentinesDay-ValentinesDayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ValentinesDay-ValentinesDayUITests/Pods-ValentinesDay-ValentinesDayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BE99DD7C9F4D302BA6FCCB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ValentinesDay/Pods-ValentinesDay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ValentinesDay/Pods-ValentinesDay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ValentinesDay/Pods-ValentinesDay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F961C0FCAB23B1BDCAA9C37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ValentinesDay-ValentinesDayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		967D4E646CA7661BFFDE68DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ValentinesDayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		800F794A25D00C8F002D9247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80FC70EA25D53CD800635FB5 /* TreasurePage.swift in Sources */,
+				800F79B425D01BF9002D9247 /* FourthPage.swift in Sources */,
+				800F79DC25D15541002D9247 /* MenuView.swift in Sources */,
+				800F79B925D01CB3002D9247 /* HomePage.swift in Sources */,
+				800F795625D00C90002D9247 /* ViewController.swift in Sources */,
+				800F79C225D0416A002D9247 /* QrCode.swift in Sources */,
+				800F79A525D01BC8002D9247 /* FirstPage.swift in Sources */,
+				800F79AA25D01BD5002D9247 /* SecondPage.swift in Sources */,
+				805A1B7F25D3172D00501A6C /* ClueView.swift in Sources */,
+				800F79AF25D01BE1002D9247 /* ThirdPage.swift in Sources */,
+				800F795225D00C8F002D9247 /* AppDelegate.swift in Sources */,
+				800F79CD25D050B0002D9247 /* Clues.swift in Sources */,
+				800F795425D00C8F002D9247 /* SceneDelegate.swift in Sources */,
+				800F79E725D15E06002D9247 /* ClueCell.swift in Sources */,
+				800F79A025D01A4B002D9247 /* SwipeThroughPage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800F796025D00C91002D9247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800F796925D00C91002D9247 /* ValentinesDayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800F796B25D00C91002D9247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800F797425D00C91002D9247 /* ValentinesDayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		800F796625D00C91002D9247 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 800F794D25D00C8F002D9247 /* ValentinesDay */;
+			targetProxy = 800F796525D00C91002D9247 /* PBXContainerItemProxy */;
+		};
+		800F797125D00C91002D9247 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 800F794D25D00C8F002D9247 /* ValentinesDay */;
+			targetProxy = 800F797025D00C91002D9247 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		800F795725D00C90002D9247 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				800F795825D00C90002D9247 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		800F795C25D00C90002D9247 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				800F795D25D00C90002D9247 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		800F797625D00C91002D9247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				"SDKROOT[arch=*]" = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		800F797725D00C91002D9247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		800F797925D00C91002D9247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 312243B41E84465D1AE48E2B /* Pods-ValentinesDay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UEA5XWCYV3;
+				INFOPLIST_FILE = ValentinesDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.christian.ValentinesDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		800F797A25D00C91002D9247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 445C528D55A44616AD889B29 /* Pods-ValentinesDay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UEA5XWCYV3;
+				INFOPLIST_FILE = ValentinesDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.christian.ValentinesDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		800F797C25D00C91002D9247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED5ADC7807794BCF9C941BDE /* Pods-ValentinesDayTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UEA5XWCYV3;
+				INFOPLIST_FILE = ValentinesDayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christian.ValentinesDayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ValentinesDay.app/ValentinesDay";
+			};
+			name = Debug;
+		};
+		800F797D25D00C91002D9247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3319CD1A310D30A259F55D2 /* Pods-ValentinesDayTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UEA5XWCYV3;
+				INFOPLIST_FILE = ValentinesDayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christian.ValentinesDayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ValentinesDay.app/ValentinesDay";
+			};
+			name = Release;
+		};
+		800F797F25D00C91002D9247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F049C52C551610328E68362 /* Pods-ValentinesDay-ValentinesDayUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UEA5XWCYV3;
+				INFOPLIST_FILE = ValentinesDayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christian.ValentinesDayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ValentinesDay;
+			};
+			name = Debug;
+		};
+		800F798025D00C91002D9247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAA8EC49C7C5A12FF6EF3866 /* Pods-ValentinesDay-ValentinesDayUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UEA5XWCYV3;
+				INFOPLIST_FILE = ValentinesDayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christian.ValentinesDayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ValentinesDay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		800F794925D00C8F002D9247 /* Build configuration list for PBXProject "ValentinesDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800F797625D00C91002D9247 /* Debug */,
+				800F797725D00C91002D9247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		800F797825D00C91002D9247 /* Build configuration list for PBXNativeTarget "ValentinesDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800F797925D00C91002D9247 /* Debug */,
+				800F797A25D00C91002D9247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		800F797B25D00C91002D9247 /* Build configuration list for PBXNativeTarget "ValentinesDayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800F797C25D00C91002D9247 /* Debug */,
+				800F797D25D00C91002D9247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		800F797E25D00C91002D9247 /* Build configuration list for PBXNativeTarget "ValentinesDayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800F797F25D00C91002D9247 /* Debug */,
+				800F798025D00C91002D9247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 800F794625D00C8F002D9247 /* Project object */;
+}
